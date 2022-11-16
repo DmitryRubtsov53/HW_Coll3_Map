@@ -24,6 +24,8 @@ public class HW1_task3 {
         System.out.println("Введите 5 произвольных цифр от 1 до 9: ");
         Integer tmpVaiue = scanner.nextInt();
 
+        scanner.close();
+
         if (!task3.containsKey(tmpKey)) {
             task3.put(tmpKey, tmpVaiue);
            } else if (tmpVaiue.equals(task3.get(tmpKey))) {
@@ -35,13 +37,6 @@ public class HW1_task3 {
         for (HashMap.Entry<String, Integer> pair: task3.entrySet()) {
             System.out.println(pair.getKey() + "\t" + pair.getValue());
         }
-
-
-
-
-
-
-
 
     } // main -------------------------------------------------------------------------------------
 
