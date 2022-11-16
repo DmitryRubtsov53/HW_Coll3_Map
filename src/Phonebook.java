@@ -4,7 +4,7 @@ public class Phonebook {
 
     public static void main(String[] args) {
 
-        System.out.println("Домашнее задание: Введение в коллекции. Ассециативные массивы ___________________________ ");
+        System.out.println("Домашнее задание: Телефонный справочник ___________________________ ");
         System.out.println();
 
         HashMap<String,String> phoneBook = new HashMap<>();
@@ -22,11 +22,15 @@ public class Phonebook {
         for (String name: phoneBook.keySet()) {
             System.out.print("Абонент: " + name);
         }
+        System.out.println();
+
         for (String phoneNumber: phoneBook.values()) {
             System.out.println("Номер телефона  " + phoneNumber);
         }
-        for (HashMap.Entry<String, String> pair: phoneBook.entrySet()) {
-            System.out.println("Контакт " + pair.getKey() + ": " + pair.getValue());
+        System.out.println();
+
+        for (HashMap.Entry<String, String> contact: phoneBook.entrySet()) {
+            System.out.println("Контакт " + contact.getKey() + ": " + contact.getValue());
         }
 
     } // main -------------------------------------------------------------------------------------
