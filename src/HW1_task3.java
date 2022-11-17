@@ -28,7 +28,8 @@ public class HW1_task3 {
 
         if (!task3.containsKey(tmpKey)) {
             task3.put(tmpKey, tmpVaiue);
-           } else if (tmpVaiue.equals(task3.get(tmpKey))) {
+           } else
+               if (tmpVaiue.equals(task3.get(tmpKey))) {
             throw new RuntimeException("Такие данные уже есть.");
                   } else task3.replace(tmpKey,tmpVaiue);
 
