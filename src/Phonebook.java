@@ -4,7 +4,7 @@ public class Phonebook {
 
     public static void main(String[] args) {
 
-        System.out.println("Домашнее задание: Телефонный справочник ___________________________ ");
+        System.out.println("Домашнее задание 1. Задание 1. Телефонный справочник ____________________ ");
         System.out.println();
 
         HashMap<String,String> phoneBook = new HashMap<>();
